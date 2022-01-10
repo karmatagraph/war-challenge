@@ -31,32 +31,39 @@ struct ContentView: View {
                     
                     HStack(){
                         Spacer()
-                        Text("Player")
-                            .fontWeight(.bold)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        VStack(){
+                            Text("Player")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                                .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                                .padding(.bottom, 10.0)
+                                
+                            Text("0")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             
+                        }
+                        Spacer()
+                        VStack(){
+                            Text("CPU")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .padding(.bottom, 10.0)
+                                
+                            Text("0")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             
+                        }
                         Spacer()
-                        Text("CPU")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                        Spacer()
+                        
                     }
-                    HStack(){
-                        Spacer()
-                        Text("0")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                        Spacer()
-                        Text("0")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                        Spacer()
-                    }
+                    
                 }
                 
                 Spacer()
